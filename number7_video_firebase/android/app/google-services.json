@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934032533462",
+    "project_id": "fir-blog1-e5523",
+    "storage_bucket": "fir-blog1-e5523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934032533462:android:87335b42a2140fb611e677",
+        "android_client_info": {
+          "package_name": "om.example.number7_video_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934032533462-lfl111i1g9pmbir2s8ddm215udmqfhib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2qYI82amvHUvgnder8IozANJXbfsF5WU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934032533462-lfl111i1g9pmbir2s8ddm215udmqfhib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
