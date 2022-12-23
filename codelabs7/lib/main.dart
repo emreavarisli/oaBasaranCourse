@@ -1,44 +1,74 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
-const owlUrl =
-    'https://raw.githubusercontent.com/flutter/website/main/src/images/owl.jpg';
+const _duration = Duration(milliseconds: 400);
 
-class FadeInDemo extends StatefulWidget {
-  const FadeInDemo({Key? key}) : super(key: key);
-
-  @override
-  State<FadeInDemo> createState() => _FadeInDemoState();
+double randomBorderRadius() {
+  return Random().nextDouble() * 64;
 }
 
-class _FadeInDemoState extends State<FadeInDemo> {
-  double opacity = 0.0;
+double randomMargin() {
+  return Random().nextDouble() * 64;
+}
+
+Color randomColor() {
+  return Color(0xFFFFFFFF & Random().nextInt(0xFFFFFFFF));
+}
+
+class AnimatedContainerDemo extends StatefulWidget {
+  const AnimatedContainerDemo({Key? key}) : super(key: key);
+
+  @override
+  State<AnimatedContainerDemo> createState() => _AnimatedContainerDemoState();
+}
+
+class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
+  late Color color;
+  late double borderRadius;
+  late double margin;
+
+  void change() {
+    setState(() {
+      color = randomColor();
+      borderRadius = randomBorderRadius();
+      margin = randomMargin();
+    });
+  }
+
+  @override
+  initState() {
+    super.initState();
+    color = randomColor();
+    borderRadius = randomBorderRadius();
+    margin = randomMargin();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Image.network(owlUrl),
-        TextButton(
-          child: const Text(
-            'Show Details',
-            style: TextStyle(color: Colors.blueAccent),
-          ),
-          onPressed: () => setState(() {
-            opacity = 1;
-          }),
+    return Scaffold(
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            SizedBox(
+              width: 128,
+              height: 128,
+              child: AnimatedContainer(
+                margin: EdgeInsets.all(margin),
+                decoration: BoxDecoration(
+                  color: color,
+                  borderRadius: BorderRadius.circular(borderRadius),
+                ),
+                duration: _duration,
+                curve: Curves.easeOutBack,
+              ),
+            ),
+            ElevatedButton(
+              child: const Text('change'),
+              onPressed: () => change(),
+            ),
+          ],
         ),
-        AnimatedOpacity(
-          duration: const Duration(seconds: 2),
-          opacity: opacity,
-          child: Column(
-            children: const [
-              Text('Type: Owl'),
-              Text('Age: 39'),
-              Text('Employment: None'),
-            ],
-          ),
-        )
-      ],
+      ),
     );
   }
 }
@@ -50,11 +80,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: FadeInDemo(),
-        ),
-      ),
+      home: AnimatedContainerDemo(),
     );
   }
 }
