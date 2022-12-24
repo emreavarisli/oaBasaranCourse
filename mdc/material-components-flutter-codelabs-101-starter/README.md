@@ -42,7 +42,6 @@ the License.
 
 ## Gallery
 
-<img src="https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto1.PNG" width="300" height="250" alt="imageOne">
 ![alt text](https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto1.PNG)
 ![alt text](https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto2.PNG)
 ![alt text](https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto3.PNG)
