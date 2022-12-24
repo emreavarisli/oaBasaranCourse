@@ -50,7 +50,6 @@ class _LoginPageState extends State<LoginPage> {
             ),
             OverflowBar(
               alignment: MainAxisAlignment.end,
-              // TODO: Add a beveled rectangular border to CANCEL (103)
               children: <Widget>[
                 TextButton(
                   child: const Text('CANCEL'),
@@ -76,7 +75,6 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(7.0)),
                     ),
                   ),
-                  // TODO: Add a beveled rectangular border to NEXT (103)
                 ),
               ],
             ),
