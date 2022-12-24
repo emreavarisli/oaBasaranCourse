@@ -39,3 +39,9 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
+
+## Gallery
+
+![alt text](https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto1.PNG)
+![alt text](https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto2.PNG)
+![alt text](https://github.com/emreavarisli/oaBasaranFlutterCourse/blob/main/mdc/material-components-flutter-codelabs-101-starter/mdc_100_series/gallery/foto3.PNG)
