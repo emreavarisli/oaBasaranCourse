@@ -145,10 +145,6 @@ class _BackdropState extends State<Backdrop>
     var appBar = AppBar(
       elevation: 0.0,
       titleSpacing: 0.0,
-      leading: IconButton(
-        icon: const Icon(Icons.menu),
-        onPressed: _toggleBackdropLayerVisibility,
-      ),
       // TODO: Remove leading property (104)
       title: _BackdropTitle(
         listenable: _controller.view,
@@ -163,7 +159,6 @@ class _BackdropState extends State<Backdrop>
             semanticLabel: 'login',
           ),
           onPressed: () {
-            // TODO: Add open login (104)
             Navigator.push(
               context,
               MaterialPageRoute(
